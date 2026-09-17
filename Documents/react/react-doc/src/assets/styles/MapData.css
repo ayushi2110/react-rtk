@@ -1,0 +1,30 @@
+/* Styles for the MapData table */
+.map-container{
+  padding: 16px;
+  overflow-x: auto;
+}
+.map-table{
+  width: 100%;
+  border-collapse: collapse;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+.map-table th,
+.map-table td{
+  border: 1px solid #e2e8f0;
+  padding: 10px 12px;
+  text-align: left;
+}
+.map-table th{
+  background: linear-gradient(180deg,#f8fafc,#f1f5f9);
+  font-weight: 600;
+  color: #111827;
+}
+.map-table tr:nth-child(even){
+  background: #fbfdff;
+}
+.map-table tr:hover{
+  background: #eef6ff;
+}
+@media (max-width: 600px){
+  .map-table th, .map-table td{ padding: 8px 6px; font-size: 14px; }
+}
