@@ -1,0 +1,91 @@
+/* Shared styles for inner learning pages */
+
+.controlled-section {
+  text-align: center;
+}
+
+.controlled-steps {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto 30px;
+  padding-left: 40px;
+}
+
+.controlled-steps li {
+  font-size: 20px;
+  padding: 6px 0;
+}
+
+.page-root {
+  padding: 2rem 0;
+  min-height: 65vh;
+  background: #ffffff;
+}
+.page-hero {
+  background: linear-gradient(90deg, #f0f4ff 0%, #f9fbff 100%);
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16, 42, 67, 0.04);
+  margin-bottom: 1rem;
+}
+.page-title {
+  margin: 0;
+  color: #102a43;
+  font-size: 1.5rem;
+}
+.page-sub {
+  color: #486581;
+  margin-top: 0.25rem;
+}
+.page-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(16, 42, 67, 0.06);
+  margin-bottom: 1rem;
+}
+.demo-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-plain {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-ghost {
+  background: transparent;
+  color: #102a43;
+  border: 1px solid #e6eef8;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+}
+.code-block {
+  background: #0b1220;
+  color: #d6e9ff;
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  overflow: auto;
+}
+.page-back {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0b66ff;
+  text-decoration: none;
+}
+.explain {
+  color: #334e68;
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    font-size: 1.25rem;
+  }
+}

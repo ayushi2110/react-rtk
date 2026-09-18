@@ -1,0 +1,64 @@
+/* Home page styles: colorful cards and responsive grid */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.home-root {
+  min-height: 70vh;
+  background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
+}
+.home-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #1f2d3d;
+}
+.home-sub {
+  color: #536170;
+  margin-bottom: 1.25rem;
+}
+.learn-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.learn-card {
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border-top: 6px solid #6c5ce7; /* overridden inline */
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 18px rgba(31, 45, 61, 0.06);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+  display: flex;
+  align-items: center;
+}
+.learn-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(31, 45, 61, 0.12);
+}
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.card-content h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #102a43;
+}
+.card-arrow {
+  font-size: 1.25rem;
+  color: #8aa0b8;
+}
+
+@media (max-width: 576px) {
+  .home-title {
+    font-size: 1.5rem;
+  }
+}
